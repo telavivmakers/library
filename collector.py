@@ -22,7 +22,7 @@ def collect():
     with open('barcode_scan.log', 'a') as f:
         while True:
             sys.stdout.write('>> ')
-            scanned = raw_input()
+            scanned = input()
             barcodes.append(scanned)
             f.write(scanned)
             f.write('\n')
